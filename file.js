@@ -96,7 +96,7 @@ function displayResults(calculation) {
     }, 100);
 }
 
-document.getElementById('calculateBtn').addEventListener('click', function() {
+document.getElementById('calculateBtn').addEventListener('click', function () {
     const bruttoInput = document.getElementById('bruttoInput').value;
     const brutto = parseFloat(bruttoInput) || 0;
 
@@ -109,13 +109,13 @@ document.getElementById('calculateBtn').addEventListener('click', function() {
     displayResults(calculation);
 });
 
-document.getElementById('bruttoInput').addEventListener('keypress', function(event) {
+document.getElementById('bruttoInput').addEventListener('keypress', function (event) {
     if (event.key === 'Enter') {
         document.getElementById('calculateBtn').click();
     }
 });
 
-window.addEventListener('load', function() {
+window.addEventListener('load', function () {
     document.getElementById('emptyState').style.display = 'block';
     document.getElementById('results').style.display = 'none';
 });
